@@ -16,7 +16,7 @@ const sans = Hanken_Grotesk({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://interior-design-web.vercel.app"),
+  metadataBase: new URL("https://interiordesign-web.vercel.app"),
   title: "Interior Studio - Interior Architecture",
   description:
     "The art of feeling at home. Interior is an independent interior architecture studio creating considered residences, spaces and bespoke objects.",
