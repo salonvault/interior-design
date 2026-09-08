@@ -1,36 +1,43 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ELORIA Atelier
 
-## Getting Started
+An editorial interior architecture website built with Next.js App Router, React, TypeScript, Tailwind CSS 4, and GSAP.
 
-First, run the development server:
+## Run locally
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit the local URL printed by Next.js.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- `app/page.tsx` only composes the independent visual sections.
+- `components/` contains each major section, navigation, shared primitives, and the motion controller.
+- `app/globals.css` holds global color tokens, the centered Tailwind `container` utility, responsive compositions, and CSS 3D geometry.
+- `components/Motion.tsx` owns scroll animation setup and cleanup through GSAP context and matchMedia.
+- `public/images/` contains locally optimized WebP images from the supplied design assets.
+- `scripts/prepare-images.mjs` fetches the original-resolution sources and optimizes them with Sharp.
 
-## Learn More
+## Interaction and accessibility
 
-To learn more about Next.js, take a look at the following resources:
+The desktop project sequence uses ScrollTrigger pinning and horizontal movement. Tablet, phone, short desktop windows, and reduced-motion settings use native horizontal scrolling. Previous/next controls work in both modes.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+The material exhibit uses CSS perspective and transformed architectural planes, with keyboard-accessible material buttons. Pointer tilt is limited to mouse input and disabled for reduced motion.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+The navigation uses a native modal dialog for focus containment, Escape dismissal, and focus restoration. Content remains visible without animation or JavaScript.
 
-## Deploy on Vercel
+Contact links open the visitor's email or telephone application. No submission service, database, or false delivery confirmation is used. Social links are intentionally omitted until the studio supplies its actual profile URLs.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Validation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```bash
+npm run lint
+npm run build
+npm run start -- --port 3100
+```
+
+With that server running, `node scripts/verify-site.mjs` checks five viewport sizes, navigation, material switching, project controls, anchor targets, image loading, browser errors, and reduced motion using an installed Chrome browser. Screenshots are saved under ignored `.artifacts/`.
+
+Fonts are served through `next/font`. The initial build needs access to Google Fonts; imagery is served locally and does not depend on the original host at runtime.
