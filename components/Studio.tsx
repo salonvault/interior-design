@@ -22,7 +22,7 @@ export default function Studio() {
           </div>
           <figcaption>
             <Label>Fig. 02 — The poetry of proportion</Label>
-            <span>Lahore / Pakistan</span>
+            <span>Residential interiors</span>
           </figcaption>
         </figure>
         <div className="studio-copy" data-reveal>
@@ -37,8 +37,8 @@ export default function Studio() {
             final hand-finished detail, we design around life.
           </p>
           <p>
-            Our Lahore atelier brings architecture, interiors and bespoke
-            objects into one considered practice. Local craft, contemporary
+            Our studio brings architecture, interiors and bespoke
+            objects into one considered practice. Thoughtful craft, contemporary
             expression, and nothing without a reason.
           </p>
           <TextLink href="#contact">Meet your next space</TextLink>

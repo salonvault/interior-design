@@ -1605,7 +1605,9 @@
     top: 40px;
   }
   .liquid-feature {
-    min-height: 560px;
+    height: 60svh;
+    max-height: 60svh;
+    min-height: 0;
   }
   .liquid-feature h2 {
     max-width: 330px;

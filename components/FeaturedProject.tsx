@@ -21,7 +21,7 @@ export default function FeaturedProject() {
         </div>
         <div className="container featured-bottom">
           <div>
-            <Label>Private residence — Lahore</Label>
+            <Label>Private residence</Label>
             <h2 id="featured-title" data-reveal>
               A world
               <br />
@@ -44,7 +44,7 @@ export default function FeaturedProject() {
         </div>
       </div>
       <div className="container featured-colophon">
-        <span>31°31′ N · 74°21′ E</span>
+        <span>Site-specific interior architecture</span>
         <span>A dialogue between shelter and openness.</span>
         <span>Interior / Selected environments</span>
       </div>

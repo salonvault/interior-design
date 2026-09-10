@@ -12,7 +12,7 @@ export default function Contact() {
         </div>
         <a
           className="contact-title"
-          href="mailto:hello@eloria.studio"
+          href="mailto:hello@yourstudio.com"
           data-reveal
         >
           <span>What could</span>
@@ -26,15 +26,15 @@ export default function Contact() {
         <div className="contact-details">
           <div>
             <Label>New beginnings</Label>
-            <a href="mailto:hello@eloria.studio">hello@eloria.studio</a>
-            <a href="tel:+924235718900">+92 42 3571 8900</a>
+            <a href="mailto:hello@yourstudio.com">hello@yourstudio.com</a>
+            <p>Available by enquiry</p>
           </div>
           <div>
-            <Label>Find the atelier</Label>
+            <Label>Studio presence</Label>
             <p>
-              14-C Gulberg III
+              Remote and local collaborations
               <br />
-              Lahore, Pakistan
+              By appointment
             </p>
             <span className="contact-appointment">
               By appointment. Always personal.

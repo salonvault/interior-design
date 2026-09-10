@@ -116,8 +116,8 @@ export default function Navigation() {
             ))}
           </nav>
           <div className="menu-foot">
-            <a href="mailto:hello@eloria.studio">hello@eloria.studio</a>
-            <span>Lahore, Pakistan · Commissions nationwide</span>
+            <a href="mailto:hello@yourstudio.com">hello@yourstudio.com</a>
+            <span>Remote and local collaborations</span>
           </div>
         </div>
       </dialog>
